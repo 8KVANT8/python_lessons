@@ -26,6 +26,9 @@ class Stack(StackInterface):
     def pop_back(self):
         ret = self._last
         _ = self._top
+        if self._top == self._last:
+            self._top = self._last = None
+            return ret
         while _._next != self._last:
             _ = self._._next
         self._last = _
