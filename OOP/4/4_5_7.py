@@ -75,3 +75,4 @@ del_obj = st.pop_back()
 assert del_obj == obj_top, "метод pop_back возвратил неверный объект"
 
 assert st._top is None, "неверное значение атрибута _top"
+print("")
